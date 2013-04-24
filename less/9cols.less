@@ -1,0 +1,16 @@
+@import "sizes.less";
+
+.col9 {
+	width: @c9;
+
+    &:after {
+        content: '9 Col';
+    }
+
+}
+
+@media (max-width: 320px) {
+	.col9 {
+		width: 100%; 
+	}
+}

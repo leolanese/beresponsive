@@ -1,0 +1,44 @@
+@column-width: 56;
+@gutter-width: 2;
+@columns: 17;
+
+@gridsystem-width: (@column-width*@columns) + (@gutter-width*@columns) * 1px;
+@total-width: @gridsystem-width;
+
+.row(@columns:@columns) {
+    display: block;
+    width: @total-width*((@gutter-width + @gridsystem-width)/@gridsystem-width);
+    margin: 0 @total-width*(((@gutter-width*.5)/@gridsystem-width)*-1);
+}
+.column(@x,@columns:@columns) {
+    display: inline;
+    float: left;
+    width: @total-width*((((@gutter-width+@column-width)*@x)-@gutter-width) / @gridsystem-width);
+    margin: 0 @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+.debug(@color) {
+    position:relative;
+
+    &:after{
+        content:"";
+        display:block;
+        position: absolute;
+        top:0;
+        left:0;
+        height:100000px;
+        width:100%;
+        background-color: @color;
+        opacity: 0.5;
+        border:1px solid purple;
+    }
+}
+
+.push(@offset:1) {
+    margin-left: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+.pull(@offset:1) {
+    margin-right: @total-width*(((@gutter-width+@column-width)*@offset) / @gridsystem-width) + @total-width*((@gutter-width*.5)/@gridsystem-width);
+}
+
+@total-column-width: @column-width + @gutter-width * 1px;

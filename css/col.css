@@ -1,0 +1,44 @@
+.block {
+  clear: both;
+  padding: 0px;
+  margin: 0px;
+}
+.block .col:hover {
+  background: #ffea00 !important;
+}
+#content .col {
+  background: #ffd500;
+  height: 9em;
+}
+.pack {
+  zoom: 1;
+  /* For IE 7 (trigger hasLayout) */
+
+}
+.col {
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
+}
+.col:first-child {
+  margin-left: 0;
+}
+.col1 {
+  width: 100%;
+}
+.col1:after {
+  content: '1 Column';
+  font-size: 0.8rem;
+}
+.col1-no-content {
+  width: 100%;
+  text-align: center;
+}
+.col1-no-content:after {
+  font-size: 0.8rem;
+}
+@media (max-width: 320px) {
+  .col {
+    margin: 1% 0 1% 0%;
+  }
+}

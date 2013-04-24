@@ -1,0 +1,11 @@
+.col10 {
+  width: 8.56%;
+}
+.col10:after {
+  content: '10 Col';
+}
+@media (max-width: 320px) {
+  .col10 {
+    width: 100%;
+  }
+}

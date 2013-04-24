@@ -1,0 +1,18 @@
+@import "sizes.less";
+
+.col5 {
+  	width: @c5;
+
+    &:after {
+        content: '5 Col';
+        font-size: 0.8rem;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+	.col5 {
+		width: 100%; 
+	}
+}

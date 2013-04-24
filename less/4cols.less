@@ -1,0 +1,24 @@
+@import "sizes.less";
+
+.col4 {
+	width: @c4;
+
+    &:after {
+        content: '4 Col';
+        font-size: 0.8rem;
+    }
+
+}
+
+.col4-no-content {
+    width: 23.8%;
+}
+
+
+@media (max-width: 320px) {
+	.col4,
+    .col4-no-content {
+        width: 100%;
+    }
+
+}

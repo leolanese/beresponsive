@@ -1,0 +1,12 @@
+.col3 {
+  width: 32.2%;
+}
+.col3:after {
+  content: '3 Col';
+  font-size: 0.8rem;
+}
+@media (max-width: 320px) {
+  .col3 {
+    width: 100%;
+  }
+}

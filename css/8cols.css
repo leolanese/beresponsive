@@ -1,0 +1,11 @@
+.col8 {
+  width: 11.1%;
+}
+.col8:after {
+  content: '8 Col';
+}
+@media (max-width: 320px) {
+  .col8 {
+    width: 100%;
+  }
+}

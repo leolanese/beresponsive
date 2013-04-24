@@ -1,0 +1,17 @@
+@import "sizes.less";
+
+.col6 {
+  	width: @c6;
+
+    &:after {
+        content: '6 Col';
+    }
+}
+
+
+@media (max-width: 320px) {
+	.col6 {
+		width: 100%; 
+	}
+
+}

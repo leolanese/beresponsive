@@ -1,0 +1,22 @@
+.col2 {
+  width: 49.2%;
+}
+.col2:after {
+  content: '2 Col';
+  font-size: 0.8rem;
+}
+.col2-no-content {
+  width: 49.2%;
+  text-align: center;
+}
+.col2-no-content:after {
+  font-size: 0.8rem;
+}
+@media (max-width: 320px) {
+  .pack {
+    border: 1px solid #945d2c;
+  }
+  .col2 {
+    width: 100%;
+  }
+}

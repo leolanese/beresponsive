@@ -1,0 +1,15 @@
+@import "sizes.less";
+
+.col11 {
+	width: @c11;
+    &:after {
+        content: '11 Col';
+    }
+}
+
+
+@media (max-width: 320px) {
+	.col11 {
+		width: 100%;
+	}
+}

@@ -1,0 +1,16 @@
+@import "sizes.less";
+
+.col8 {
+	width: @c8;
+
+    &:after {
+        content: '8 Col';
+    }
+
+}
+
+@media (max-width: 320px) {
+	.col8 {
+		width: 100%; 
+	}
+}

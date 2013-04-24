@@ -1,0 +1,11 @@
+.col9 {
+  width: 9.68%;
+}
+.col9:after {
+  content: '9 Col';
+}
+@media (max-width: 320px) {
+  .col9 {
+    width: 100%;
+  }
+}

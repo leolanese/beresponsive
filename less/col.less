@@ -1,0 +1,58 @@
+@import "sizes.less";
+
+.block {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+
+    .col:hover {
+        background: #ffea00 !important;
+    }
+}
+
+#content .col {
+    background: rgb(255, 213, 0);
+    height: 9em;
+}
+
+.pack {
+    zoom:1; /* For IE 7 (trigger hasLayout) */
+}
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.col1 {
+    width: @c1;
+
+    &:after{
+        content: '1 Column';
+        font-size: 0.8rem;
+    }
+
+}
+.col1-no-content{
+    width: @c1;
+    text-align: center;
+
+    &:after{
+        font-size: 0.8rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 320px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+}

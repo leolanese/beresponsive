@@ -1,0 +1,12 @@
+.col5 {
+  width: 18.72%;
+}
+.col5:after {
+  content: '5 Col';
+  font-size: 0.8rem;
+}
+@media (max-width: 320px) {
+  .col5 {
+    width: 100%;
+  }
+}

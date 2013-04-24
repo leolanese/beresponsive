@@ -1,0 +1,11 @@
+.col12 {
+  width: 6.86%;
+}
+.col12:after {
+  content: '12 Col';
+}
+@media (max-width: 320px) {
+  .col12 {
+    width: 100%;
+  }
+}

@@ -1,0 +1,220 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  background: #ededed;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Verdana, "Myriad Web", Syntax, sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  color: #ffd500;
+}
+h1 {
+  color: #000;
+  margin-bottom: 0.2em;
+  font-size: 2em;
+  font-size: 5vw;
+  /* each unit is equal to 1% of the width of the containing block */
+
+  line-height: 1.2;
+}
+p,
+ol,
+ul,
+dl,
+address {
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  /* 16 / 16 = 1 */
+
+}
+article {
+  padding: 10px;
+}
+#wrapper {
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+header {
+  padding-top: 4em;
+  text-align: center;
+}
+#content {
+  clear: both;
+  width: 98%;
+  font-size: 0.8125em;
+  /* 13 / 16 */
+
+  max-width: 92.3em;
+  /* 1200px / 13 */
+
+  margin: 0 auto;
+  padding: 1em 0px;
+  color: #333;
+  line-height: 1.5em;
+  position: relative;
+}
+.content {
+  clear: both;
+  margin: 0 auto;
+  padding: 1em 0px;
+  width: 80%;
+  /* 1000px / 1250px */
+
+  font-size: 0.8125em;
+  /* 13 / 16 */
+
+  max-width: 92.3em;
+  /* 1200px / 13 */
+
+  color: #333;
+  line-height: 1.5em;
+  position: relative;
+}
+footer {
+  clear: both;
+  font-size: 0.8125em;
+  /* 13 / 16 */
+
+  max-width: 92.3em;
+  /* 1200px / 13 */
+
+  padding: 20px 5% 10px 2%;
+  color: #999;
+  border-top: 1px solid #000;
+  background: #000;
+  margin: 0 auto;
+}
+footer:before,
+footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer strong {
+  font-size: 1.077em;
+  /* 14 / 13 */
+
+  color: #aaa;
+}
+footer a:link,
+footer footer a:visited {
+  color: #999;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+.pack {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+
+}
+.pack:before,
+.pack:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article.clickable {
+  position: relative;
+}
+article.clickable a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  z-index: 10;
+  background-color: white;
+  opacity: 0;
+  filter: alpha(opacity=1);
+  /*workaround to make clickable in IE */
+
+}
+/* content first */
+body:before {
+  font-size: .5em;
+}
+#content .col {
+  background: #ffcc00 !important;
+}
+.block:hover {
+  background: #2e394f !important;
+}
+/* measures, only for testing propouses */
+@media (min-width: 20em) {
+  /* 320px */
+  #content .col {
+    background: #E5A800 !important;
+  }
+}
+@media (min-width: 40em) {
+  /* 480px */
+  #content .col {
+    background: #dd8b00 !important;
+  }
+}
+@media (min-width: 48em) {
+  /* 768px */
+  #content .col {
+    background: #ff7800 !important;
+  }
+}
+@media (min-width: 64em) {
+  /*  1024px */
+  #content .col {
+    background: #c26953 !important;
+  }
+}
+@media (min-width: 84em) {
+  /*  1344px */
+  #content .col:hover {
+    background: #ffdc00 !important;
+  }
+}
+/**/
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #349edb;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+::-webkit-selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+::-moz-selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+::selection {
+  background: #1777af;
+  color: #fafafa;
+  text-shadow: none;
+}
+.ie7 img,
+.iem7 img {
+  -ms-interpolation-mode: bicubic;
+}
+p {
+  /* http://www.w3.org/TR/css3-text/#hyphenation */
+
+  -webkit-hyphens: auto;
+  -webkit-hyphenate-character: "\2010";
+  -webkit-hyphenate-limit-after: 1;
+  -webkit-hyphenate-limit-before: 3;
+  -moz-hyphens: auto;
+}
